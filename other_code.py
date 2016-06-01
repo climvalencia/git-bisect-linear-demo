@@ -9,5 +9,6 @@ def sum_array_recursive1(array, total):
     else:
         return sum_array_recursive1(array, total + array.pop())
 
+assert sum_array_recursive([]) == 0
 assert sum_array_recursive(array('H', [1,2,3,4,5,6,7])) == 28
 print "WORKS"
