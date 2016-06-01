@@ -1,6 +1,8 @@
 
 def sum_array_recursive(array):
-    if len(array) == 1:
+    if len(array) < 1:
+        return 0
+    elif len(array) == 1:
         return array.pop()
     else:
         return array.pop() + sum_array_recursive(array)
